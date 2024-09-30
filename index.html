@@ -299,8 +299,13 @@ rel="stylesheet" type="text/css"> <TITLE>Jian Li Ph.D.</TITLE>
     <div style="float:right;">2018/2017/2016/2015 &nbsp;&nbsp;&nbsp;Fall</div>
   </div>
 
-<a href="#top" class="goTopButton">To Top</a>
-go top test
+<div class="footer">
+    © Last modified on: <span id="modifiedDate">2024-06</span> <a href="#top" class="goTopButton">To Top</a>
+</div>
+<script>
+    // 动态设置最后编辑时间（可以手动写死日期）
+    document.getElementById('modifiedDate').textContent = new Date(document.lastModified).toISOString().slice(0, 7);
+</script>
 
 
 
